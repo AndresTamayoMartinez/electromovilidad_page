@@ -1,0 +1,358 @@
+/* About Us Styling */
+.about-us .about-content .about-left,
+.about-us .about-content .about-right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.about-us .about-content .about-left .text,
+.about-us .about-content .about-right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about-us .about-content .about-left p,
+.about-us .about-content .about-right p{
+    font-size: 18px;
+}
+/* About Us Styling */
+
+/* Out Teammates Styling */
+.teammates .teammates-content{
+    display: none;
+}
+
+.teammates .teammates-content.show{
+    display: flex;
+}
+
+.teammates .teammates-content .team-left,
+.teammates .teammates-content .team-right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.teammates .teammates-content .team-left{
+    align-items: flex-end;
+}
+
+.teammates .teammates-content .team-right{
+    align-items: flex-start;
+}
+
+.teammates .teammates-content .team-center{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.teammates .teammates-content .team-center .line{
+    width: 5px;
+    height: 500px;
+    background: #021D34;
+    border-radius: 10px;
+}
+
+.teammates .teammates-content .team-left .person,
+.teammates .teammates-content .team-right .person{
+    display: flex;
+}
+
+.teammates .teammates-content .team-right{
+    padding-top: 80px;
+}
+
+.teammates .teammates-content .team-left .person .person-container,
+.teammates .teammates-content .team-right .person .person-container{
+    display: flex;
+    align-items: center;
+}
+
+.teammates .teammates-content .team-left .person img,
+.teammates .teammates-content .team-right .person img{
+    height: 150px;
+    width: 150px;
+    border: 5px solid #656565;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.teammates .teammates-content .team-left .person .person-info,
+.teammates .teammates-content .team-right .person .person-info{
+    margin-top: 50px;
+}
+
+.teammates .teammates-content .team-left .person .person-info .name,
+.teammates .teammates-content .team-right .person .person-info .name{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.teammates .teammates-content .team-left .person .person-info .information,
+.teammates .teammates-content .team-right .person .person-info .information{
+    font-size: 18px;
+}
+
+.teammates .teammates-content .team-left .person .person-info{
+    margin-right: 30px;
+    text-align: right;
+}
+
+.teammates .teammates-content .team-right .person .person-info{
+    margin-left: 30px;
+    text-align: left;
+}
+/* Out Teammates Styling */
+
+/* Project Section */
+.projects{
+    text-align: center;
+}
+
+.projects #carousel{
+    display: none;
+}
+
+.projects #carousel.show{
+    display: inline-block;
+}
+
+.projects .carousel .card{
+    background: #656565;
+    border-radius: 30px;
+    padding: 35px 65px;
+    transition: all 0.3s ease-in-out;
+}
+
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.projects .carousel .card .box .project-info{
+    padding-right: 50px;
+    text-align: left;
+}
+
+.projects .carousel .card .box .project-info .project-title{
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.projects .carousel .card .box .project-info p{
+    margin-top: 13px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.projects .carousel .card img{
+    height: 250px;
+    width: 350px;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+}
+
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.projects .more-projects{
+    display: none;
+    background: #021D34;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 12px 40px;
+    margin-top: 25px;
+    border: 3px solid #021D34;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.projects .more-projects.show{
+    display: inline-block;
+}
+
+.projects .more-projects:hover{
+    color: #021D34;
+    background: none;
+    border: 3px solid #021D34;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 3px solid #021D34!important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover{
+    background: #021D34!important;
+}
+/* Project Section */
+
+/* Contact Styling */
+.contact{  
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+}
+
+.contact.show{
+    background-image: url(../img/contact-background.svg);
+}
+
+.contact .contact-content{
+    display: none;
+    justify-content: space-between;
+}
+
+.contact .contact-content.show{
+    display: flex;
+    padding: 30px 30px;
+
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 20px;
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+
+.contact .contact-content .left span{
+    color: crimson;
+}
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.contact .contact-content .info .head{
+    font-weight: 500;
+    color: #021D34;
+}
+
+.contact .contact-content .info .sub-title{
+    color: #000000;
+}
+
+.contact .right form .fields{
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .name{
+    margin-right: 10px;
+}
+
+.contact .right form .email{
+    margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button{
+    height: 47px;
+    width: 100%;
+}
+
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #021D34;
+    background: #021D34;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .button button:hover{
+    color: #ffffff;
+    background: none;
+    border: 2px solid #ffffff;
+}
