@@ -1,0 +1,19 @@
+footer{
+    text-align: center;
+    background: #656565;
+    padding: 20px 23px;
+    color: #ffffff;
+}
+
+footer #footer-span{
+    display: inline-block;
+}
+
+footer span a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}
