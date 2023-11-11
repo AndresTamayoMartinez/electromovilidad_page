@@ -1,4 +1,4 @@
-import './HeaderScreen.css';
+import '../css/HeaderScreen.css';
 
 const HeaderScreen = () => {
     return (

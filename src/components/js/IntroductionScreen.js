@@ -1,9 +1,9 @@
-import './IntroductionScreen.css';
-import imgTeam1 from '../img/team1.jpg';
-import imgTeam2 from '../img/team2.jpg';
-import imgTeam3 from '../img/team3.jpg';
-import imgTeam4 from '../img/team4.jpg';
-import imgProject from '../img/project1.jpg'
+import '../css/IntroductionScreen.css';
+import imgTeam1 from '../../img/team1.jpg';
+import imgTeam2 from '../../img/team2.jpg';
+import imgTeam3 from '../../img/team3.jpg';
+import imgTeam4 from '../../img/team4.jpg';
+import imgProject from '../../img/project1.jpg'
 
 const IntroductionScreen = () => {
     return (

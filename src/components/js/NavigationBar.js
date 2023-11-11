@@ -1,4 +1,4 @@
-import './NavigationBar.css';
+import '../css/NavigationBar.css';
 import { Link } from 'react-router-dom';
 
 const NavigationBar = () => {
