@@ -41,7 +41,7 @@ export const addPerson = (name, degree, position, shortDesc, fullDesc1, fullDesc
 );
 //addPersonImage function, to save iamge from a person in the data storage
 export async function addPersonImage(file){
-  const storageRef = ref(storage, 'person/' + uuid.v4());
+  const storageRef = ref(storage, 'person/' + "uuid.v4()");
   await uploadBytes(storageRef, file);
   const url = await getDownloadURL(storageRef);
   return url;
@@ -53,7 +53,7 @@ export const addProject = (name, sdesc, desc1, desc2, image) => addDoc(
 );
 //addProjectImage function, to save iamge from a person in the data storage
 export async function addProjectImage(file){
-  const storageRef = ref(storage, 'projects/' + uuid.v4());
+  const storageRef = ref(storage, 'projects/' + "uuid.v4()");
   await uploadBytes(storageRef, file);
   const url = await getDownloadURL(storageRef);
   return url;

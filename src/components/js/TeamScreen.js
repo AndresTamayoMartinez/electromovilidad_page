@@ -1,5 +1,9 @@
 import '../css/TeamScreen.css';
 import TeamCard from "./TeamCard";
+import { getTeam } from './firebase_connection';
+
+const querySnapshot = await getTeam();
+const response = querySnapshot.docs;
 
 const TeamScreen = () => {
     const names = [
@@ -14,13 +18,14 @@ const TeamScreen = () => {
                 <div className="max-width">
                     <h2 id="team-title" className="title">Nuestro Equipo</h2>
                     <div id="teammates-content" className="teammates-content">
-                        {names.map((names, key)=>
+                        {response.map((doc, key)=>
                             <TeamCard
                                 key={key}
-                                personNames={names.name}
-                                personDegree={names.degree}
-                                personPosition={names.position}
-                                personId={names.id}
+                                personName={doc.data().name}
+                                personDegree={doc.data().degree}
+                                personPosition={doc.data().position}
+                                personImage={doc.data().image}
+                                personId={doc.id}
                             />
                         )}
                     </div>
